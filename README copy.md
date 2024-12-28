@@ -21,7 +21,7 @@ build_flags =
 
 CYD_InternetRadio/lib/lgfx_ESP32_2432S028/lgfx_ESP32_2432S028.h
 Panel:
-      cfg.offset_rotation  = 0;             // offset of rotation direction value 0~7 (4~7 is upside down)
+      cfg.offset_rotation  = 1;             // offset of rotation direction value 0~7 (4~7 is upside down)
 
       cfg.invert     = true;        
 

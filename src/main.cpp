@@ -428,7 +428,7 @@ void UiPanelRadio::handleKeys(int x, int y)
                   savePreference();
                 break;
             }
-            delay(100);
+            delay(50);
         }
     }
 }

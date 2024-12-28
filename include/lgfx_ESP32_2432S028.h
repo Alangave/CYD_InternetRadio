@@ -48,12 +48,12 @@ public:
       cfg.panel_height  = TFT_HEIGHT;       // actual displayable height
       cfg.offset_x = 0;                     // amount of panel offset in X direction
       cfg.offset_y = 0;                     // amount of offset in Y direction for the panel
-      cfg.offset_rotation  = 4;             // offset of display rotation (set 4 to get LANDSCAPE_USP_RIGHT, PORTRAIT_USB_UP, 
+      cfg.offset_rotation  = 1;             // offset of display rotation (set 4 to get LANDSCAPE_USP_RIGHT, PORTRAIT_USB_UP, 
                                             // LANDSCAPE_USP_LEFT, PORTRAIT_USB_DOWN for lcd.setRotation(r) r=0..3)
       cfg.dummy_read_pixel = 8;             // number of dummy read bits before pixel read
       cfg.dummy_read_bits  = 1;             // dummy read bits before out-of-pixel data read
       cfg.readable   = true;                // set to true if data read is possible
-      cfg.invert     = false;               // set to true if the panel is inverted
+      cfg.invert     = true;               // set to true if the panel is inverted
       cfg.rgb_order  = true;                // color order true for RGB, false for BGR
       cfg.dlen_16bit = false;               // set to true if panel sends data length in 16bit units
       cfg.bus_shared = true;                // set to true to share bus with SD card
@@ -76,7 +76,7 @@ public:
       cfg.y_max = 3797;        // maximum Y value (raw value) from touchscreen 
       cfg.pin_int = TP_IRQ;    // pin number where INT is connected, TP IRQ
       cfg.bus_shared = false;  // set to true if using a common bus with the screen
-      cfg.offset_rotation = 1; // adjust if display and touch orientation do not match, (set 1 for LANDSCAPE, 3 for PORTRAIT)
+      cfg.offset_rotation = 6; // adjust if display and touch orientation do not match, (set 1 for LANDSCAPE, 3 for PORTRAIT)
       // For SPI connection
       cfg.spi_host = VSPI_HOST;  // Select SPI to use (HSPI_HOST or VSPI_HOST)
       cfg.freq = 1000000;        // Set SPI clock
